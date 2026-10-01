@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sxs-wave-analysis"
+version = "0.1.0"
+description = "A Python workspace for analyzing SXS numerical-relativity waveforms."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Geoffrey Lovelace"}]
+dependencies = [
+    "numpy>=1.26",
+    "matplotlib>=3.9.2",
+    "sxs>=2026.0.7",
+    "qnmfinder @ git+https://github.com/keefemitman/qnmfinder.git@71bfa283599f0cc6f0c6afdb33c4bdcac96c8c84",
+    "scri>=2024.0.14",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.urls]
+Repository = "https://github.com/geoffrey4444/SXSWaveAnalysis"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"

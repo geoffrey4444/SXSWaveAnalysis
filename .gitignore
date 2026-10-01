@@ -1,0 +1,54 @@
+# macOS Finder files, resource forks, and volume metadata
+.DS_Store
+.DSStore
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100/
+.Trashes/
+.fseventsd/
+.TemporaryItems/
+.DocumentRevisions-V100/
+.VolumeIcon.icns
+
+# Python bytecode, builds, environments, and tool caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.ipynb_checkpoints/
+
+# Local configuration, credentials, and editors
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Downloaded simulations, SXS caches, and generated analysis products
+/.cache/
+/.sxs/
+/data/
+/results/
+/outputs/
+*.h5
+*.hdf5
+*.npy
+*.npz
